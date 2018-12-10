@@ -1,23 +1,37 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Cristina Gala Portfolio",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/crisgalasanchez/portfolio.git"
-  },
-  "author": "Cristina Gala",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/crisgalasanchez/portfolio/issues"
-  },
-  "homepage": "https://github.com/crisgalasanchez/portfolio#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.2"
-  }
+	"name": "portfolio",
+	"version": "2.0.2",
+	"description": "Cristina Gala Portfolio",
+	"dependencies": {
+		"browser-sync": "^2.26.3",
+		"del": "^3.0.0",
+		"eslint": "^4.19.1",
+		"gulp-autoprefixer": "*",
+		"gulp-clean-css": "*",
+		"gulp-combine-mq": "*",
+		"gulp-concat": "*",
+		"gulp-html-partial": "^1.0.1",
+		"gulp-notify": "*",
+		"gulp-plumber": "*",
+		"gulp-rename": "*",
+		"gulp-sass": "4.0.2",
+		"gulp-sourcemaps": "*",
+		"gulp-uglify-es": "^1.0.4",
+		"gulp-zip": "*",
+		"run-sequence": "*"
+	},
+	"scripts": {
+		"start": "gulp",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/crisgalasanchez/portfolio.git"
+	},
+	"author": "Cristina Gala",
+	"license": "MIT",
+	"homepage": "https://github.com/crisgalasanchez/portfolio#readme",
+	"devDependencies": {
+		"gulp": "^4.0.0"
+	}
 }
