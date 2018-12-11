@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html {
@@ -14,21 +15,29 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
 .header {
     width: 100%;
     height: 130px;
     min-height: 80px;
-    background-color:transparent;
+    background-color:#B55545;
     //position: fixed;
     // flex-direction: row;
     //align-items: center;
-    margin-left: 10px;
     top: 0;
     left: 0;
 
 }
+.container__home{
+    color: #312c2c;
+    padding: 10px 0px 0px 15px; 
+}
+.home__name{
+    font-family: 'Gloria Hallelujah', serif;
+    font-size: 2.3em;
+}
+
 .burguer {
     position: fixed;
     top: 0;
@@ -64,23 +73,21 @@ html {
 }
 
 .nav__item:hover{
-    background-color:#e1e2e3;
+    background-color:#C2AFAE;
     text-decoration: none;
-    color: #3c9700;
+    color: #B55545;
 }
 
 .nav__link {
     text-decoration: none;
-    color: #3c9700;
+    color:#B55545;
     font-weight: 600;
     padding: 3%;
 }
 
 #button__menu {
     cursor: pointer; 
-    padding: 10px 25px 16px 0px;
-    
-    margin-right: 20px;
+    padding: 25px 25px 15px 15px;
     z-index: 1;
     display: block;
     position: fixed;
@@ -91,7 +98,7 @@ html {
     border-radius: 1px;
     height: 4px;
     width: 30px;
-    background:#CB2026;
+    background-color: black;
     position: absolute;
     display: block;
     content: '';
@@ -136,5 +143,22 @@ html {
 }
 main{
     margin-top: 150px;
-    margin-left: 15px;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+//**ABOUT**
+.about__photo{
+    border: 10px groove #B55545;
+    border-radius: 100px;
+    margin: 10px;
+}
+.about__text{
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.container__footer{
+    background-color: #554342;
+    color:#C2AFAE;
 }

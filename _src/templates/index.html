@@ -8,6 +8,7 @@
         
         <title>Cristina Gala Portfolio</title>
         <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png"/>
         <link rel="stylesheet" href="/assets/css/main.css">
     </head>
@@ -15,8 +16,8 @@
         <header class="page__header">
             <div class="header">
                 <div class="container__home">
-                            <h1>Cristina Gala Sánchez</h1>
-                            <h2>Front-end Developer</h2>
+                            <h1 class="home__name">Cristina Gala Sánchez</h1>
+                            <h2 class="home__role">Front-end Developer</h2>
                         </div>
                 <div class="button__menu" id="button__menu">
                     <a href="#">
@@ -53,7 +54,7 @@
                 <div class="container__about">
                     <div class="about__content">
                         <h2>Hola!</h2>
-                        <img src="../assets/images/profile.jpg">
+                        <img class="about__photo" src="../assets/images/profile.jpg">
                         <p class="about__text">Desarrolladora front-end entusiasmada de la programación y del diseño desde que descubrí este mundo. Ávida por aprender, perfeccionista, pragmática, responsable y organizadora de nacimiento. 
                             Amante de los viajes y de los animales, de las tortitas con nata y del código limpio. 
                             Con muchas ganas de seguir aprendiendo y conocer a fondo este mundo tan apasionante de la programación y de las tecnologías. Con capacidad de adaptación y compromiso.
@@ -138,27 +139,43 @@
                     </ul>
                 </div>
             </section>
+
+            <section class="contact" id="contact">
+                <div class="container__contact">
+                    <h2>Contacto</h2>
+                    <div class="email">
+                        <a href="http://" target="_blank">
+                            <img src="..assets/icons/email.png" alt="email"> crisgalasanchez@gmail.com
+                        </a>
+                    </div>
+                    <div class="container__networks">
+                        <ul class="menu__networks">
+                            <li class="menu__network">
+                                <a class="menu__link" href="https://www.linkedin.com/in/cristinagalasanchez/">
+                                    <img src="../assets/icons/linkedin.png" alt="linkedin">
+                                </a>
+                            </li>
+                            <li class="menu__network">
+                                <a class="menu__link" href="https://github.com/crisgalasanchezl">
+                                    <img src="../assets/icons/github.png" alt="github">
+                                </a>
+                            </li>
+                            <li class="menu__network">
+                                <a class="menu__link" href="https://twitter.com/crisgalasan">
+                                    <img src="../assets/icons/twitter.png" alt="twitter">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
         </main>
        
         <footer>
-            <div class="email">
-                <a href="http://" target="_blank"><img src="" alt="email"> crisgalasanchez@gmail.com</a>
+            <div class="container__footer">
+                <p class="">Copyright © 2018 CRISTINA GALA SÁNCHEZ.</p>
+                <a href=""><img src="" alt="">top</a>
             </div>
-            <div class="container__networks">
-                <ul class="menu__networks">
-                    <li class="menu__network">
-                        <a class="menu__link" href="https://www.linkedin.com/in/cristinagalasanchez/"><img src="" alt="linkedin"></a>
-                    </li>
-                    <li class="menu__network">
-                        <a class="menu__link" href="https://github.com/crisgalasanchezl"><img src="" alt="github"></a>
-                    </li>
-                    <li class="menu__network">
-                        <a class="menu__link" href="https://twitter.com/crisgalasan"><img src="" alt="twitter"></a>
-                    </li>
-                </ul>
-            </div>
-            <p class="">2018 CRISTINA GALA SÁNCHEZ.</p>
-            <a href=""><img src="" alt="">top</a>
+            
         </footer>
         <script src="/assets/js/main.js"></script>
     </body>
