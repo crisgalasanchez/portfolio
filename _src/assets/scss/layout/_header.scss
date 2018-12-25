@@ -1,0 +1,130 @@
+.page__header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: 0.6em;
+}
+.header {
+    width: 100%;
+    height: 130px;
+    min-height: 80px;
+    background-color:$colorPrimary;
+    //position: fixed;
+    // flex-direction: row;
+    //align-items: center;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+
+}
+.container__home{
+    color: #312c2c;
+    padding: 10px 0px 0px 30px; 
+}
+.home__name{
+    font-family: 'Gloria Hallelujah', serif;
+    font-size: 2.6em;
+    @media all and (min-width:768px) {
+        font-size: 3em;
+     }
+}
+
+.burguer {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: transform ease 0.7s;
+    transform: translateX(-1000%);
+}
+
+.menu__visible .burguer {
+    transform: translateX(0);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container__menu {
+    background-color:white;
+    opacity: 1;
+    margin-top: 60px;
+	padding-left: 0;
+    z-index: 1;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav__item{
+    display: block;
+    padding: 15px;
+}
+
+.nav__item:hover{
+    background-color:#C2AFAE;
+    text-decoration: none;
+    color: $colorPrimary;
+}
+
+.nav__link {
+    text-decoration: none;
+    color:$colorPrimary;
+    font-weight: 600;
+    padding: 3%;
+}
+
+#button__menu {
+    cursor: pointer; 
+    display: block;
+    position: fixed;
+    padding: 35px 55px 0px 0px;
+    z-index: 1;
+    right: 0;
+    top: 0;
+}
+
+#button__menu span, #button__menu span:before, #button__menu span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 4px;
+    width: 40px;
+    background-color: black;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+.logo{
+    height: 45px;
+    margin-left: 66px;
+}
+
+#button__menu span:before {
+    top: -10px;
+}
+
+#button__menu span:after {
+    bottom: -10px;
+}
+
+#button__menu span, #button__menu span:before, #button__menu span:after {
+    transition: all 500ms ease-in-out;
+}
+
+#button__menu.active span {
+    background-color: transparent;
+}
+
+#button__menu.active span:before, #button__menu.active span:after {
+    top: 0;
+}
+
+#button__menu.active span:before {
+    transform: rotate(45deg);
+}
+
+#button__menu.active span:after {
+    transform: rotate(-45deg);
+}

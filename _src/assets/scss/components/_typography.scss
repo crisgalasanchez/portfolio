@@ -1,0 +1,12 @@
+html {
+    font-family: 'Prompt', serif;
+}
+//**ABOUT**
+.about__text{
+    text-align: justify;
+    line-height: 1.4;
+    @media all and (min-width:768px) {
+        padding: 3% 50px;
+        line-height: 1.5;
+     }
+}

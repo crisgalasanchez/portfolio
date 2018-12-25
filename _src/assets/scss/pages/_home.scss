@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    overflow-x:hidden;
+}
+
+/*.home {
+    padding-top: 150px;
+    background: url(../images/background.jpg) center no-repeat  #fff; 
+    background-size: cover;
+}*/
+.title, .about__content{
+    margin: 20px;
+}
+
+.menu__icon{
+    position: relative;
+    top: 5px;
+}
+main{
+    margin-top: 150px;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+li{
+    cursor: pointer;
+    list-style:none
+}

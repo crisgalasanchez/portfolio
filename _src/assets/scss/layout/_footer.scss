@@ -1,0 +1,26 @@
+//**FOOTER**
+.container__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100px;
+    padding: 15px 0px 23px 0px;
+    background-color: #554342;
+    color:#C2AFAE;
+    @media all and (min-width:768px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 35px 0px 0px 25px;
+     }
+}
+.footer__copy{
+    margin-right: 10px;
+}
+#up {
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    z-index: 9999;
+	opacity: 0.9;
+}
