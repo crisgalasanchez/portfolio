@@ -2,15 +2,21 @@
     box-sizing: border-box;
     margin: 0;
 }
-
 html {
     font-family: 'Prompt', serif;
 }
+body {
+    overflow-x:hidden;
+}
+
 /*.home {
     padding-top: 150px;
     background: url(../images/background.jpg) center no-repeat  #fff; 
     background-size: cover;
 }*/
+.title, .about__content{
+    margin: 20px;
+}
 .page__header {
     position: fixed;
     top: 0;
@@ -21,21 +27,25 @@ html {
     width: 100%;
     height: 130px;
     min-height: 80px;
-    background-color:#B55545;
+    background-color:#a93420;
     //position: fixed;
     // flex-direction: row;
     //align-items: center;
     top: 0;
     left: 0;
+    opacity: 0.9;
 
 }
 .container__home{
     color: #312c2c;
-    padding: 10px 0px 0px 15px; 
+    padding: 10px 0px 0px 30px; 
 }
 .home__name{
     font-family: 'Gloria Hallelujah', serif;
-    font-size: 2.3em;
+    font-size: 2.6em;
+    @media all and (min-width:768px) {
+        font-size: 3em;
+     }
 }
 
 .burguer {
@@ -61,10 +71,9 @@ html {
 }
 
 .menu{
-    max-width: 530px;
-    list-style: none;
-    padding-left: 0;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .nav__item{
@@ -75,29 +84,31 @@ html {
 .nav__item:hover{
     background-color:#C2AFAE;
     text-decoration: none;
-    color: #B55545;
+    color: #a93420;
 }
 
 .nav__link {
     text-decoration: none;
-    color:#B55545;
+    color:#a93420;
     font-weight: 600;
     padding: 3%;
 }
 
 #button__menu {
     cursor: pointer; 
-    padding: 25px 25px 15px 15px;
-    z-index: 1;
     display: block;
     position: fixed;
+    padding: 35px 55px 0px 0px;
+    z-index: 1;
+    right: 0;
+    top: 0;
 }
 
 #button__menu span, #button__menu span:before, #button__menu span:after {
     cursor: pointer;
     border-radius: 1px;
     height: 4px;
-    width: 30px;
+    width: 40px;
     background-color: black;
     position: absolute;
     display: block;
@@ -137,7 +148,7 @@ html {
     transform: rotate(-45deg);
 }
 
-.icon{
+.menu__icon{
     position: relative;
     top: 5px;
 }
@@ -147,18 +158,122 @@ main{
     margin-right: 20px;
 }
 
+li{
+    cursor: pointer;
+    list-style:none
+}
+
+
 //**ABOUT**
+.about__content {
+    @media all and (min-width:768px) {
+       display: flex;
+    }
+}
 .about__photo{
     border: 10px groove #B55545;
     border-radius: 100px;
     margin: 10px;
+    height: 300px;
 }
 .about__text{
     text-align: justify;
-    line-height: 1.2;
+    line-height: 1.4;
+    @media all and (min-width:768px) {
+        padding: 3% 50px;
+        line-height: 1.5;
+     }
+}
+//**PROJECTS**
+.menu__project{
+    height: 200px;
+    width: 250px;
+}
+.card__project--image{
+    width: 100%;
+}
+.opacity{
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 80%;
+    opacity: 0;
+    transition: linear .8s;
+}
+.data__projects {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+//**SKILLS**
+.icon{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.skills__tecnical{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media all and (min-width:768px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+     }
+}
+.menu__skill{
+    display: flex;
+    padding-bottom: 10px;
+}
+.skills__personal{
+    display: grid;
+    grid-template-columns: 1fr;
+    @media all and (min-width:768px) {
+        grid-template-columns: 1fr 1fr;
+     }
 }
 
+//**CONTACT**
+.email{
+    text-align: center;
+    padding: 50px;
+}
+.menu__networks{
+    display: flex;
+    justify-content: center;
+}
+.menu__network{
+    margin:10px;
+}
+
+
+//**FOOTER**
 .container__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100px;
+    padding: 15px 0px 23px 0px;
     background-color: #554342;
     color:#C2AFAE;
+    @media all and (min-width:768px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 35px 0px 0px 25px;
+     }
+}
+.footer__copy{
+    margin-right: 10px;
+}
+#up {
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    z-index: 9999;
+	opacity: 0.9;
 }

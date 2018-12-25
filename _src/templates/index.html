@@ -29,19 +29,23 @@
                         <div class='container__menu'>
                             <ul class="menu" id="menu">
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#about"><img title="Sobre mi" alt="" class="icon" src="" />Sobre mi</a>
+                                    <a class="nav__link" href="#about"><img title="Sobre mi" alt="" class="menu__icon" src="" />Sobre mi</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#projects"><img title="Trabajos" alt="" class="icon" src="" />Trabajos</a>
+                                    <a class="nav__link" href="#projects"><img title="Trabajos" alt="" class="menu__icon" src="" />Trabajos</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#skills"><img title="Habilidades" class="icon" alt="" src="" />Habilidades</a>
+                                    <a class="nav__link" href="#skills"><img title="Habilidades" class="menu__icon" alt="" src="" />Habilidades</a>
+                                        <ul>
+                                            <li>Habilidades técnicas</li>
+                                            <li>Habilidades personales</li>
+                                        </ul>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#social"><img title="Redes sociales" class="icon" alt="" src="" />Redes sociales</a>
+                                    <a class="nav__link" href="#social"><img title="Redes sociales" class="menu__icon" alt="" src="" />Redes sociales</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#contact"><img title="Contacto" class="icon" alt="" src="" />Contacto</a>
+                                    <a class="nav__link" href="#contact"><img title="Contacto" class="menu__icon" alt="" src="" />Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -52,8 +56,8 @@
         <main>
             <section class="about"  id="about">
                 <div class="container__about">
+                    <h2 class="title">Hola!</h2>
                     <div class="about__content">
-                        <h2>Hola!</h2>
                         <img class="about__photo" src="../assets/images/profile.jpg">
                         <p class="about__text">Desarrolladora front-end entusiasmada de la programación y del diseño desde que descubrí este mundo. Ávida por aprender, perfeccionista, pragmática, responsable y organizadora de nacimiento. 
                             Amante de los viajes y de los animales, de las tortitas con nata y del código limpio. 
@@ -66,75 +70,128 @@
     
             <section class="projects" id="projects">
                 <div class="container__projects">
-                    <h2>Proyectos</h2>
-                    <ul class="menu__projects">
+                    <h2 class="title">Proyectos</h2>
+                    <ul class="menu menu__projects">
                         <li class="menu__project">
-                            <a class="card--project" href="http://beta.adalab.es/clarke-s2-scriptoras/"><img src="" alt="curriculum">Curriculum</a>
+                            <a class="card__project" href="http://beta.adalab.es/clarke-s2-scriptoras/">
+                                <img class="card__project--image" src="../assets/images/scriptoras.jpg" alt="curriculum">
+                            </a>
+                            <div class="opacity"></div>
+                            <div class="data__projects">
+                                <h4>titulo</h4>
+                                <p>description</p>
+                            </div>
                         </li>
                         <li class="menu__project">
-                            <a class="card--project" href=""><img src="" alt=""></a>
+                            <!-- <a class="card__project" href=""> -->
+                            <img class="card__project--image" src="../assets/images/codebreakers.png" alt="codebreakers">
+                        
+                            <div class="opacity"></div>
+                            <div class="data__projects">
+                                <h4>titulo</h4>
+                                <p>description</p>
+                            </div>
                         </li>
                         <li class="menu__project">
-                            <a class="card--project" href=""><img src="" alt=""></a>
+                            <a class="card__project" href="">
+                                <img class="card__project--image" src="../assets/images/pokemon.png" alt="pokemon">
+                            </a>
+                            <div class="opacity"></div>
+                            <div class="data__projects">
+                                <h4>titulo</h4>
+                                <p>description</p>
+                            </div>
+                        </li>
+                        <li class="menu__project">
+                            <a class="card__project" href="http://beta.adalab.es/clarke-s2-scriptoras/">
+                                <img class="card__project--image" src="../assets/images/federici.png" alt="federici">
+                            </a>
+                            <div class="opacity"></div>
+                            <div class="data__projects">
+                                <h4>titulo</h4>
+                                <p>description</p>
+                            </div>
                         </li>
                     </ul>
             </section>
     
             <section class="skills" id="skills">
                 <div class="container__skills">
-                    <h2>Habilidades</h2>
-                    <ul class="menu__skills">
-                        <li>
-                            <img src="/icons/html5.svg" alt="html5">
+                    <h2 class="title">Habilidades</h2>
+                    <h3 class="title">Habilidades técnicas</h3>
+                    <ul class="menu skills__tecnical">
+                        <li class="menu__skill">
+                            <img class="icon" src="../html5.png" alt="html5">
                             <p>HTML5</p>
                         </li>
-                        <li>
-                            <img src="/icons/css3.svg" alt="css3">
+                        <li class="menu__skill">
+                            <img class="icon" src="../css3.png" alt="css3">
                             <p>CSS3</p>
                         </li>
-                        <li>
-                            <img src="/icons/javascript.png" alt="javascript">
-                            <p>JavaScript</p>
+                        <li class="menu__skill">
+                            <img class="icon" src="../javascript.png" alt="javascript">
+                            <p>JS</p>
                         </li>
-                        <li>
-                            <img src="/icons/sass.png" alt="sass">
+                        <li class="menu__skill">
+                            <img class="icon" src="../sass.png" alt="sass">
                             <p>SASS</p>
                         </li>
-                        <li>
-                            <img src="/icons/gulp.svg" alt="gulp">
+                        <li class="menu__skill">
+                            <img class="icon" src="../gulp.png" alt="gulp">
                             <p>GULP</p>
                         </li>
-                        <li>
-                            <img src="/icons/git.png" alt="git">
+                        <li class="menu__skill">
+                            <img class="icon" src="../git.png" alt="git">
                             <p>GIT</p>
                         </li>
-                        <li>
-                            <img src="/icons/es6.png" alt="es6">
+                        <li class="menu__skill">
+                            <img class="icon" src="../es6.png" alt="es6">
                             <p>ES6</p>
                         </li>
-                        <li>
-                            <img src="/icons/react.png" alt="react">
+                        <li class="menu__skill">
+                            <img class="icon" src="../react.png" alt="react">
                             <p>REACT</p>
                         </li>
-                        <li>
-                            <img src="/icons/atom.png" alt="atom">
-                            <p>VISUAL STUDIO</p>
+                        <li class="menu__skill">
+                            <img class="icon" src="../visualstudio.png" alt="atom">
+                            <p>VSC</p>
                         </li>
-                        <li>
-                            <img src="/icons/vsc.svg" alt="vsc">
-                            <p>VS Code</p>
+                        <li class="menu__skill">
+                            <img class="icon" src="../atom.png" alt="vsc">
+                            <p>ATOM</p>
                         </li>
-                        <li>
-                            <img src="/icons/zeplin.jpg" alt="zeplin">
+                        <li class="menu__skill">
+                            <img class="icon" src="../zeplin.png" alt="zeplin">
                             <p>ZEPLIN</p>
                         </li>
-                        <li>
-                            <img src="/iicons/slack.svg" alt="slack">
+                        <li class="menu__skill">
+                            <img class="icon" src="../slack.png" alt="slack">
                             <p>SLACK</p>
                         </li>
-                        <li>
-                            <img src="/icons/trello.svg" alt="trello">
+                        <li class="menu__skill">
+                            <img class="icon" src="../trello.png" alt="trello">
                             <p>TRELLO</p>
+                        </li>
+                    </ul>
+                    <h3 class="title">Habilidades personales</h3>
+                    <ul class="menu skills__personal">
+                        <li>
+                            <img class="icon" src="../listSkills.png" alt="skills">Gestión de proyectos
+                        </li>
+                        <li>
+                            <img class="icon" src="../listSkills.png" alt="skills">Trabajo en equipo
+                        </li>
+                        <li>
+                            <img class="icon" src="../listSkills.png" alt="skills">Proactividad
+                        </li>
+                        <li>
+                            <img class="icon" src="../listSkills.png" alt="skills">Capacidad de adaptación
+                        </li>
+                        <li>
+                            <img class="icon" src="../listSkills.png" alt="skills">Planificación y organización
+                        </li>
+                        <li>
+                            <img class="icon" src="../listSkills.png" alt="skills">Capacidad para asumir retos
                         </li>
                     </ul>
                 </div>
@@ -142,27 +199,28 @@
 
             <section class="contact" id="contact">
                 <div class="container__contact">
-                    <h2>Contacto</h2>
+                    <h2 class="title">Contacto</h2>
                     <div class="email">
                         <a href="http://" target="_blank">
-                            <img src="..assets/icons/email.png" alt="email"> crisgalasanchez@gmail.com
+                            <img class="icon" src="../email.png" alt="email">
                         </a>
+                        <p> crisgalasanchez@gmail.com</p>
                     </div>
                     <div class="container__networks">
                         <ul class="menu__networks">
                             <li class="menu__network">
                                 <a class="menu__link" href="https://www.linkedin.com/in/cristinagalasanchez/">
-                                    <img src="../assets/icons/linkedin.png" alt="linkedin">
+                                    <img class="icon" src="../linkedin.png" alt="linkedin">
                                 </a>
                             </li>
                             <li class="menu__network">
                                 <a class="menu__link" href="https://github.com/crisgalasanchezl">
-                                    <img src="../assets/icons/github.png" alt="github">
+                                    <img class="icon" src="../github.png" alt="github">
                                 </a>
                             </li>
                             <li class="menu__network">
                                 <a class="menu__link" href="https://twitter.com/crisgalasan">
-                                    <img src="../assets/icons/twitter.png" alt="twitter">
+                                    <img class="icon" src="../twitter.png" alt="twitter">
                                 </a>
                             </li>
                         </ul>
@@ -172,8 +230,11 @@
        
         <footer>
             <div class="container__footer">
-                <p class="">Copyright © 2018 CRISTINA GALA SÁNCHEZ.</p>
-                <a href=""><img src="" alt="">top</a>
+                <p class="footer__copy">Copyright © 2018</p>
+                <p class="footer__name">CRISTINA GALA SÁNCHEZ.</p>
+                <a id="up" title="Up" class="invisible">
+                    <img src="../up.png" alt="Up">
+                </a>
             </div>
             
         </footer>

@@ -26,3 +26,19 @@ function crossToNav(){
 }
 body.addEventListener('click', crossToNav);
 
+/*ARROW UP*/
+window.onscroll = function(){
+	var upButton = document.getElementById('up');
+	var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+	if(scroll < 100){
+	  hide(upButton);
+	}else{
+	  show(upButton);
+	}
+  }
+  //subir al principio de la página cuando se hace click en la flecha arriba
+  //var arribaButton = document.getElementById('up');
+  upButton.onclick = function(){
+	  window.scrollTo(0,0);
+  }
+  
