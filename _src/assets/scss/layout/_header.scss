@@ -9,7 +9,8 @@
     height: 130px;
     min-height: 80px;
     background-color:$colorPrimary;
-    //position: fixed;
+    position: fixed;
+    display: flex;
     // flex-direction: row;
     //align-items: center;
     top: 0;
@@ -18,48 +19,77 @@
 
 }
 .container__home{
+    font-family: 'Gloria Hallelujah', serif;
     color: #312c2c;
     padding: 10px 0px 0px 30px; 
+    @media all and (min-width:768px) {
+        display: flex;
+        flex-direction: row;
+     }
 }
 .home__name{
-    font-family: 'Gloria Hallelujah', serif;
     font-size: 2.6em;
     @media all and (min-width:768px) {
         font-size: 3em;
+     }
+}
+.home__role{
+    font-size: 2em;
+    @media all and (min-width:768px) {
+        font-size: 1.8em;
      }
 }
 
 .burguer {
     position: fixed;
     top: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0);
-    transition: transform ease 0.7s;
     transform: translateX(-1000%);
-}
+    transition: transform ease 0.7s;
+    @media all and (min-width:768px) {
+        width: 100%;
+        transition: none;
+        transform: none;
+     }
+ }
 
 .menu__visible .burguer {
-    transform: translateX(0);
-    width: 100%;
     background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    transform: translateX(0);
+    transition: transform ease 0.7s;
 }
 
 .container__menu {
-    background-color:white;
+    background-color: #f3d7d2;
     opacity: 1;
-    margin-top: 60px;
+    margin-top: 65px;
 	padding-left: 0;
     z-index: 1;
 }
 
 .menu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+   // display: flex;
+    //flex-direction: column;
+    list-style: none;
+    text-align: center;
+    max-width: 530px;
+    padding-left: 0;
+    font-size: 1.5em;
+    @media all and (min-width:768px) {
+        display: flex;
+        width: 400px;
+        margin-top: 30px
+     }
 }
 
 .nav__item{
     display: block;
     padding: 15px;
+    @media all and (min-width:768px) {
+        display: inline;
+     }
 }
 
 .nav__item:hover{
@@ -73,6 +103,9 @@
     color:$colorPrimary;
     font-weight: 600;
     padding: 3%;
+    @media all and (min-width:768px) {
+        padding: 0;
+     }
 }
 
 #button__menu {
@@ -83,17 +116,20 @@
     z-index: 1;
     right: 0;
     top: 0;
+    @media all and (min-width:768px) {
+       visibility: hidden;
+     }
 }
 
 #button__menu span, #button__menu span:before, #button__menu span:after {
     cursor: pointer;
+    position: absolute;
+    display: block;
+    content: '';
     border-radius: 1px;
     height: 4px;
     width: 40px;
     background-color: black;
-    position: absolute;
-    display: block;
-    content: '';
 }
 
 .logo{

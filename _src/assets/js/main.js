@@ -2,13 +2,12 @@
 
 // transition menu
 document.querySelector("#button__menu").addEventListener("click", function() {
-this.classList.toggle( "active" );
+this.classList.toggle('active');
   });
 	
 // effect menu
 var buttonNav = document.querySelector('.button__menu');
 var body = document.querySelector('.body');
-var close = document.querySelector('.button__menu');
 function clickMenu(){
 	body.classList.toggle('menu__visible');
 }
