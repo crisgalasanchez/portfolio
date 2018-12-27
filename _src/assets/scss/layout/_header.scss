@@ -6,7 +6,6 @@
 }
 .header {
     width: 100%;
-    height: 130px;
     min-height: 80px;
     background-color:$colorPrimary;
     position: fixed;
@@ -21,7 +20,7 @@
 .container__home{
     font-family: 'Gloria Hallelujah', serif;
     color: #312c2c;
-    padding: 10px 0px 0px 30px; 
+    padding: 10px 0px 10px 30px; 
     @media all and (min-width:768px) {
         display: flex;
         flex-direction: row;
@@ -37,6 +36,7 @@
     font-size: 2em;
     @media all and (min-width:768px) {
         font-size: 1.8em;
+        padding: 12px 0px 0px 40px;
      }
 }
 
@@ -77,9 +77,11 @@
     max-width: 530px;
     padding-left: 0;
     font-size: 1.5em;
+    
     @media all and (min-width:768px) {
         display: flex;
-        width: 400px;
+        width: 100%;
+        margin: auto;
         margin-top: 30px
      }
 }
@@ -87,17 +89,27 @@
 .nav__item{
     display: block;
     padding: 15px;
+    &:hover {
+        background-color:#d6716c;
+        text-decoration: none;
+        color: $colorPrimary;
+    }
     @media all and (min-width:768px) {
         display: inline;
      }
 }
 
-.nav__item:hover{
-    background-color:#C2AFAE;
-    text-decoration: none;
-    color: $colorPrimary;
+ .nav__item--hability{
+    display: none;
 }
-
+/*
+.container__menu ul ul {
+    display:none;
+    position:absolute; 
+}
+.container__menu ul li:hover > ul {
+	display:block;
+} */
 .nav__link {
     text-decoration: none;
     color:$colorPrimary;
@@ -106,6 +118,11 @@
     @media all and (min-width:768px) {
         padding: 0;
      }
+     &:hover {
+        background-color:#d6716c;
+        text-decoration: none;
+        color: $colorPrimary;
+    }
 }
 
 #button__menu {
