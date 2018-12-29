@@ -1,7 +1,42 @@
 html {
     font-family: 'Prompt', serif;
 }
-//**ABOUT**
+.about__content, .title--skills, .title {
+    margin: 20px;
+    color: $colorTitle;
+}
+.title{
+    color:transparent;
+    text-shadow:0 0 10px orange;
+    letter-spacing:2px;
+    animation-name: title;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes title {
+  0% {
+    text-shadow:0 0 10px $colorTitle, 0 10px 20px darken($colorTitle,30%);
+    letter-spacing:8px;
+  }
+  50% {
+    text-shadow:0 0 0 $colorTitle;
+    font-size:1.4em;
+    letter-spacing:2px;
+  }
+  75% {
+    text-shadow:0 0 0 $colorTitle;
+    font-size:1.4em;
+    letter-spacing:2px;
+  }
+  100% {
+    text-shadow:0 0 0 $colorTitle;
+    font-size:1.4em;
+    letter-spacing:2px;
+  }
+}
 .about__text{
     text-align: justify;
     line-height: 1.4;

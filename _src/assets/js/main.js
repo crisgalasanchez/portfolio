@@ -6,15 +6,15 @@ this.classList.toggle('active');
   });
 	
 // effect menu
-var buttonNav = document.querySelector('.button__menu');
-var body = document.querySelector('.body');
+let buttonNav = document.querySelector('.button__menu');
+let body = document.querySelector('.body');
 function clickMenu(){
 	body.classList.toggle('menu__visible');
 }
 buttonNav.addEventListener('click', clickMenu);
 
 // close the menu when click on the screen
-var click = document.querySelector('.burguer');
+let click = document.querySelector('.burguer');
 click.addEventListener('click', clickMenu);
 
 // change to the cross to menu
@@ -26,17 +26,25 @@ function crossToNav(){
 body.addEventListener('click', crossToNav);
 
 /*ARROW UP*/
+function show(element){
+  element.classList.remove('invisible');
+  element.classList.add('visible');
+}
+
+function hide(element){
+  element.classList.remove('visible');
+  element.classList.add('invisible');
+}
 window.onscroll = function(){
-	var upButton = document.getElementById('up');
-	var scroll = document.documentElement.scrollTop || document.body.scrollTop;
-	if(scroll < 100){
-	  hide(upButton);
-	}else{
-	  show(upButton);
-	}
-  }
-  //subir al principio de la página cuando se hace click en la flecha arriba
-  //var arribaButton = document.getElementById('up');
+	let upButton = document.getElementById('up');
+	let scroll = document.documentElement.scrollTop || document.body.scrollTop;
+		if(scroll < 90){
+			hide(upButton);
+		}else{
+			show(upButton);
+		}
+  } 
+  let upButton = document.getElementById('up');
   upButton.onclick = function(){
 	  window.scrollTo(0,0);
   }
