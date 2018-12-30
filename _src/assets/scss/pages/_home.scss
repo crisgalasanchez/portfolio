@@ -7,8 +7,6 @@ body {
     overflow-x:hidden;
 }
 
-
-
 .menu__icon{
     position: relative;
     top: 5px;
@@ -22,4 +20,8 @@ main{
 li{
     cursor: pointer;
     list-style:none
+}
+
+section {
+   margin-top: 30px
 }

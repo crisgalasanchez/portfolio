@@ -38,14 +38,32 @@ function hide(element){
 window.onscroll = function(){
 	let upButton = document.getElementById('up');
 	let scroll = document.documentElement.scrollTop || document.body.scrollTop;
-		if(scroll < 90){
-			hide(upButton);
-		}else{
-			show(upButton);
-		}
-  } 
-  let upButton = document.getElementById('up');
-  upButton.onclick = function(){
-	  window.scrollTo(0,0);
-  }
-  
+	if(scroll < 90){
+		hide(upButton);
+	}else{
+		show(upButton);
+	}
+} 
+
+let upButton = document.getElementById('up');
+upButton.onclick = function(){
+	window.scrollTo(0,0);
+}
+
+function scroll(element) {
+  window.scrollTo({
+		top: element.offsetTop - 120,
+		left: 0,
+		behavior: 'smooth'
+	});
+}
+
+document.querySelectorAll(".nav__link").forEach(element => {
+	element.addEventListener('click', e => {
+		e.preventDefault();
+		let anchor = element.href;
+		scroll(document.getElementById(anchor.substring( anchor.indexOf('#')+1, anchor.length)));
+	});
+});
+
+
