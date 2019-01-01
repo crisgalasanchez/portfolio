@@ -18,32 +18,30 @@
     justify-content: space-between;
 }
 .menu__project{
-    height: 200px;
-    width: 250px;
+    position: relative;
+    width: 300px;
+    margin: 10px 0 25px 0;
 }
 .card__project--image{
+    display: block;
     width: 100%;
 }
-.opacity{
-    background: black;
+.data__project {
     position: absolute;
+    bottom: 0;
     left: 0;
-    top: 0;
-    width: 100%;
+    right: 0;
+    background-color: $colorHover;
+    overflow: hidden;
+    width: 0;
     height: 100%;
-    border-radius: 80%;
-    opacity: 0;
-    transition: linear .8s;
+    opacity: 0.9;
+    transition: .5s ease;
 }
-.data__projects {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    text-align: center;
-    transform: translate(-50%,-50%);
-    display: none;
-}
+.menu__project:hover .data__project {
+    width: 100%;
+  }
+
 //**SKILLS**
 .icon{
     height: 30px;

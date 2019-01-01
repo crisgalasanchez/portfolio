@@ -18,3 +18,13 @@ p, .title--skills, .title {
         line-height: 1.4;
      }
 }
+.headline {
+    color: #312c2c;
+    font-size: 0.8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+  }
