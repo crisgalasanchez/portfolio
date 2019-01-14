@@ -15,12 +15,13 @@
 .menu__projects{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 20px;
 }
 .menu__project{
     position: relative;
     width: 300px;
-    margin: 10px 0 25px 0;
+    padding: 15px;
 }
 .card__project--image{
     display: block;
