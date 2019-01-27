@@ -1,4 +1,4 @@
-<img src="/logo.png" title="Portfolio" alt="Portfolio">
+<img src="../assets/images/logo.png" title="Portfolio" alt="Portfolio">
 
 # portfolio
 Portfolio of Cristina Gala
